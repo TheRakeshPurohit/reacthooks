@@ -1,11 +1,20 @@
 import React from 'react';
 import './App.css';
-import DataFetching from './components/DataFetching';
+import CountReducer from './components/CountReducer';
+
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <DataFetching />
+      <CountReducer />
+      {/* <UserContext.Provider value={'Rakesh'}>
+                <ChannelContext.Provider value={'The Big Bang Theory'}>
+                  <ComponentC />
+                </ChannelContext.Provider>
+      </UserContext.Provider> */}
+      {/* <DataFetching /> */}
       {/* <IntervalHookCounter /> */}
       {/* <HookMouse /> */}
       {/* <ClassMouse /> */}
