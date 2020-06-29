@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import HookCounterArray from './components/HookCounterArray';
+import EffectCounterFunc from './components/EffectCounterFunc';
 
 function App() {
   return (
     <div className="App">
+      <EffectCounterFunc />
+      {/* <ClassCounterOne /> */}
       {/* <ClassCounter /> */}
       {/* <HookCounter /> */}
-      <HookCounterArray />
+      {/* <HookCounterArray /> */}
     </div>
   );
 }
