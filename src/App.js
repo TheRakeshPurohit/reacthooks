@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CountReducerTwo from './components/CountReducerTwo';
+import MultiCountReducers from './components/MultiCountReducers';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -8,7 +8,8 @@ export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      <CountReducerTwo />
+      <MultiCountReducers />
+      {/* <CountReducerTwo /> */}
       {/* <UserContext.Provider value={'Rakesh'}>
                 <ChannelContext.Provider value={'The Big Bang Theory'}>
                   <ComponentC />
