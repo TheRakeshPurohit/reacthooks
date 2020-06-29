@@ -2,10 +2,16 @@ import React, {useState} from 'react'
 
 function HookCounter() {
 
-    const [state, setstate] = useState(0)
+    const initCount = 0
+    const [state, setstate] = useState(initCount)
     return (
         <div>
-            <button onClick={() => setstate(state + 1)}>Count {state}</button>
+            {
+                state
+            }<br />
+            <button onClick={() => setstate(initCount)}>Reset</button>
+            <button onClick={() => setstate(prevState => prevState + 1)}>Increment</button>
+            <button onClick={() => setstate(prevState => prevState - 1)}>Decrement</button>
         </div>
     )
 }
