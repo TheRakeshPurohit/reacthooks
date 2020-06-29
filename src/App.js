@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import EffectCounterFunc from './components/EffectCounterFunc';
+import HookMouse from './components/HookMouse';
 
 function App() {
   return (
     <div className="App">
-      <EffectCounterFunc />
+      <HookMouse />
+      {/* <ClassMouse /> */}
+      {/* <EffectCounterFunc /> */}
       {/* <ClassCounterOne /> */}
       {/* <ClassCounter /> */}
       {/* <HookCounter /> */}
